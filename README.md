@@ -1,20 +1,22 @@
 🧠 MSNIT-CNN
+
 Regularized Convolutional Neural Network for MNIST Digit Classification
+
+A structured and regularized CNN built using TensorFlow and Keras to classify handwritten digits (0–9) from the MNIST dataset.
+
+This project focuses on clean architecture, proper regularization, stable optimization, and a practical inference pipeline — not brute-force experimentation.
+
 📌 Overview
 
-MSNIT-CNN is a structured and regularized Convolutional Neural Network built using TensorFlow and Keras to classify handwritten digits (0–9) from the MNIST dataset.
+MSNIT-CNN demonstrates disciplined deep learning engineering:
 
-This project emphasizes:
-
-Clean CNN architecture
+Structured CNN architecture
 
 Overfitting prevention
 
 Stable optimization
 
-Practical inference pipeline
-
-It demonstrates disciplined deep learning engineering rather than brute-force experimentation.
+Model saving & inference pipeline
 
 ⚙️ What It Does
 
@@ -22,22 +24,22 @@ Loads MNIST dataset
 
 Normalizes pixel values (0–255 → 0–1)
 
-Builds a regularized CNN model
+Builds a regularized CNN
 
-Uses EarlyStopping to prevent overfitting
+Uses EarlyStopping
 
-Evaluates performance
+Evaluates test performance
 
 Saves trained model
 
-Predicts custom handwritten digit images
+Predicts custom handwritten digits
 
 🧠 Model Architecture
 🔹 Input Layer
 
 28 × 28 grayscale image
 
-1 channel
+Single channel
 
 🔹 Convolution Block 1
 
@@ -95,9 +97,9 @@ Optimizer: Adam (learning_rate = 0.001)
 
 Loss Function: SparseCategoricalCrossentropy
 
-Metrics: Accuracy
+Metric: Accuracy
 
-EarlyStopping:
+EarlyStopping
 
 Monitor: val_loss
 
@@ -109,16 +111,16 @@ Regularization techniques improve generalization and reduce overfitting.
 
 📊 Expected Performance
 
-With sufficient training epochs:
+With sufficient epochs:
 
 ~98–99% accuracy on MNIST test dataset
 
-(Default epochs can be increased for better results.)
+(Default epochs can be increased for improved results.)
 
 🛠 Tech Stack
 💻 Core Language
 
-🧠 Deep Learning
+🤖 Deep Learning
 
 
 
@@ -166,11 +168,11 @@ python predict.py
 Output:
 
 Predicted digit: X
-🖼 Image Requirements for Prediction
+🖼 Image Requirements
 
 Grayscale image
 
-Auto-resized to 28×28
+Automatically resized to 28×28
 
 White digit on black background
 
@@ -202,8 +204,8 @@ Performance may decrease on noisy real-world digits
 
 CNN architecture design
 
-Regularization in practice
+Practical regularization
 
 Overfitting prevention
 
-Model saving and loading
+Model saving & loading workflow
