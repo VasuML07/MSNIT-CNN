@@ -1,6 +1,5 @@
 🧠 MSNIT-CNN
 Regularized Convolutional Neural Network for MNIST Digit Classification
-
 📌 Overview
 
 MSNIT-CNN is a structured and regularized Convolutional Neural Network built using TensorFlow and Keras to classify handwritten digits (0–9) from the MNIST dataset.
@@ -106,13 +105,13 @@ Patience: 3
 
 Restore Best Weights: True
 
-Regularization techniques help improve generalization and reduce overfitting.
+Regularization techniques improve generalization and reduce overfitting.
 
 📊 Expected Performance
 
 With sufficient training epochs:
 
-~98–99% accuracy on MNIST test dataset.
+~98–99% accuracy on MNIST test dataset
 
 (Default epochs can be increased for better results.)
 
@@ -120,8 +119,14 @@ With sufficient training epochs:
 💻 Core Language
 
 🧠 Deep Learning
+
+
+
+
 📊 Numerical Computing
+
 🖼 Image Processing
+
 📁 Project Structure
 MSNIT-CNN/
 │
@@ -202,9 +207,3 @@ Regularization in practice
 Overfitting prevention
 
 Model saving and loading
-
-Custom image inference pipeline
-
-End-to-end ML workflow
-
-📜 License
